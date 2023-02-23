@@ -19,6 +19,7 @@ header {
 
 h1 {
     font-family: 'Permanent Marker', cursive;
+    letter-spacing: 5px;
     font-size: 60px;
 }
 
@@ -28,13 +29,14 @@ h1 {
 
 main {
     padding: 10px;
-    background-color: whitesmoke;
-    border: 2px solid #777777;
-    border-radius: 5px;
 }
 
 ul {
     list-style: none;
+    border: 2px solid #777777;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
 }
 
 li {
@@ -53,3 +55,9 @@ li {
 .country-population {
     margin-bottom: 15px;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
