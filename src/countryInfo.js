@@ -1,11 +1,11 @@
-import { getApiData } from "./app";
+import { getAllApiData } from "./app";
 
-sortData()
-function sortData() {
+dataFilter()
+async function dataFilter() {
 
-    //constructs an object of the data en sorts it
+    //filters data
 
-    let data = getApiData()
+    let data = await getAllApiData()
     let list = []
 
     for (let item of data) {
@@ -16,21 +16,10 @@ function sortData() {
             population: item.population,
             color: regionColor(item.region)
         })
-
     }
 
     list.sort((a, b) => { return a.population - b.population})
     pushToHtml(list)
-    //consoleLogger(list)
-}
-
-function consoleLogger(something) {
-
-    //tmp for logging to console
-
-    something.forEach((item) => {
-        console.log(item)
-    })
 }
 
 function regionColor(region) {

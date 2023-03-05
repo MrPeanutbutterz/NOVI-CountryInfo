@@ -8,16 +8,15 @@
 </head>
 <body>
 <header>
-    <a href="index.html"><h1>World Regions</h1></a>
-    <img id="world-image" src="assets/screenshot2.png" alt="image of the world">
+    <a href="index.html">Search a country</a>
+    <img id="world-image-spinning" src="assets/screenshot2.png" alt="image of the world spinning">
 </header>
 <main>
-    <form action="#">
-        <input type="text" id="search-input" placeholder="Hello World">
-        <span><input type="submit"></span>
-        <div id="country-info"></div>
-    </form>
+    <label for="search-input"></label>
+    <input type="text" id="search-input" placeholder="Hello World">
+    <input type="button" id="submit-button" value="Search">
+    <div id="country-info"></div>
 </main>
-<script type="module" src="search.js"></script>
+<script type="module" src="countrySearch.js"></script>
 </body>
 </html>

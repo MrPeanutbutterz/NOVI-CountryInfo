@@ -1,15 +1,12 @@
 import axios from 'axios';
 
-const apiV2 = "https://restcountries.com/v2/all"
-getApiData()
+export async function getAllApiData() {
 
-export async function getApiData() {
-
-    //get data en transfer to countryData list
+    //get data
 
     try {
 
-        const response = await axios.get(apiV2)
+        const response = await axios.get('https://restcountries.com/v2/all')
         return [...response.data]
 
     } catch (error) {
