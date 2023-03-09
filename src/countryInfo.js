@@ -8,7 +8,7 @@ async function dataFilter() {
     let data = await getAllApiData()
     let list = []
 
-    for (let item of data) {
+    for (let { name, flag, population, region } of data) {
 
         list.push({
             name: item.name,
