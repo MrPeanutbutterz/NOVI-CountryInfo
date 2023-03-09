@@ -18,7 +18,7 @@ async function dataFilter() {
         })
     }
 
-    list.sort((a, b) => { return a.population - b.population})
+    list.sort((a, b) => a.population - b.population)
     pushToHtml(list)
 }
 
